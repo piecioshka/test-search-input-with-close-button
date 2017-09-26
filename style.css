@@ -1,0 +1,65 @@
+
+body {
+    margin: 0;
+    font-family: "Fira Sans", serif;
+}
+
+fieldset {
+    position: relative;
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 0;
+    height: 20px;
+    width: 500px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+label {
+    font-size: 13px;
+    display: block;
+    margin: -20px 0 0 0;
+    font-family: sans-serif;
+    color: #757575;
+}
+
+span {
+    display: inline-block;
+    outline: 0;
+    min-width: 50px;
+    max-width: 450px;
+    position: relative;
+    font-family: sans-serif;
+    height: 25px;
+    line-height: 25px;
+    white-space: nowrap;
+}
+
+fieldset span:not(:empty) + label,
+fieldset:focus-within label {
+    display: none;
+}
+
+span:after {
+    content: 'x';
+    position: absolute;
+    right: -20px;
+    top: 7px;
+    background: black;
+    font-family: sans-serif;
+    font-size: 8px;
+    font-weight: lighter;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    text-indent: 0;
+}
+
+fieldset span:empty:after {
+    display: none;
+}
