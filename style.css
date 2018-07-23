@@ -1,3 +1,6 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -9,7 +12,7 @@ fieldset {
     text-align: center;
     background-color: #f5f5f5;
     border: 0;
-    height: 20px;
+    height: 40px;
     width: 500px;
     margin: 20px;
     overflow: hidden;

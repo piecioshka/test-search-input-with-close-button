@@ -1,3 +1,4 @@
+const ENTER_KEYCODE = 13;
 const $span = document.querySelector('span');
 
 function clearInputAfterClickButton(element) {
@@ -10,6 +11,12 @@ function clearInputAfterClickButton(element) {
 
 function applyLimitOfCharacters(element) {
     element.addEventListener('keypress', (evt) => {
+        const keyCode = evt.keyCode;
+
+        if (keyCode === ENTER_KEYCODE) {
+            evt.preventDefault();
+        }
+
         if (element.innerText.length > 50) {
             evt.preventDefault();
         }
@@ -29,7 +36,7 @@ function applyMoveTextToTheRight(element) {
             console.log('more than 40 chars', antiWidth);
             element.style['text-indent'] = antiWidth + 'px';
         }
-    })
+    });
 }
 
 clearInputAfterClickButton($span);
