@@ -10,10 +10,10 @@ https://piecioshka.github.io/test-search-input-with-close-button/
 
 ## Features
 
-* :checkered_flag: Clear input when user click close button
-* :checkered_flag: Limit characters to 50
-* :construction: [DISABLED] Autofocus
-* :construction: [DISABLED] Moving long text to the right (NOT WORKING PROPERLY)
+* :white_check_mark: Clear input when user click close button
+* :white_check_mark: Limit characters to 50
+* :no_entry: [DISABLED] Autofocus
+* :no_entry: [DISABLED] Moving long text to the right (NOT WORKING PROPERLY)
 
 ## License
 
